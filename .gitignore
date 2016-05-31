@@ -204,3 +204,7 @@ bower_components
 
 ### Less ###
 app/dist/styles/main.css
+
+
+## bower ##
+app/dist/resources
