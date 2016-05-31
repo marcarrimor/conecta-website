@@ -1,52 +1,40 @@
 <!DOCTYPE html>
 <html lang="es" ng-app="conecta">
 <head>
-	<meta charset="UTF-8">
+        <meta charset="UTF-8">
 	<title>Conecta</title>
 	<!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="app/resources/bootstrap/less/badges.less">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<!-- Custom CSS -->
-    <link rel="stylesheet" href="app/dist/styles/main.css">
-
-
-
-
+        <link rel="stylesheet" href="app/dist/styles/main.css">
 </head>
+
 <body>
-		<menu></menu>
-
-		<main ng-view></main>
-
-		<footer-page></footer-page>
-
-
-
+        <menu></menu>
+	<main ng-view></main>
+	<footer-page></footer-page>
 	<!--Import jQuery-->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="app/resources/jquery/dist/jquery.min.js"></script>
 
-    <!-- AngularJS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-    <!-- AngularJS Routes -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
-
+        <!-- AngularJS -->
+        <script src="app/resources/angular/angular.min.js"></script>
+        <!-- AngularJS Routes -->
+        <script src="app/resources/angular-route/angular-route.min.js"></script>
 	<!--App-->
      	<script src="app/app.js"></script>
 
-    <!--Components-->
+        <!--Components-->
         <script src="app/components/menu/menu.js"></script>
-         <script src="app/components/footer/footer-page.js"></script>
+        <script src="app/components/footer/footer-page.js"></script>
 
-    <!--View Controllers-->
+        <!--View Controllers-->
         <script src="app/views/home/home-controller.js"></script>
 
-    <!--Routes-->
+        <!--Routes-->
         <script src="app/routes/routes.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="app/resources/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
 </body>
