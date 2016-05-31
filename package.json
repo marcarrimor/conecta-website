@@ -1,0 +1,30 @@
+{
+  "name": "conecta-website",
+  "version": "1.0.0",
+  "description": "Conetca website",
+  "main": "index.html",
+  "scripts": {
+    "test": "python -m SimpleHTTPServer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarisolenlaWeb/conecta-website.git"
+  },
+  "keywords": [
+    "site",
+    "conecta",
+    "fintech"
+  ],
+  "author": "Conecta Co",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarisolenlaWeb/conecta-website/issues"
+  },
+  "homepage": "https://github.com/MarisolenlaWeb/conecta-website",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-shell": "^1.3.0"
+  }
+}
