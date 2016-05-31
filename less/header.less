@@ -1,3 +1,8 @@
+body{
+	color: @color-text;
+}
+
+
 
 /* MENU */
 
@@ -16,7 +21,7 @@
 
 .navbar-brand {
     height: 75px;
-    padding-left: 100px;
+    padding-left: 70px;
 }
 
 .navbar-nav{
@@ -25,7 +30,7 @@
 }
 
 .btn-leng{
-	margin: 6px 90px 6px 10px;
+	margin: 6px 50px 6px 10px;
 	background-color: transparent;
 	border: 1px solid #fff;
 	color: #fff;
@@ -33,8 +38,8 @@
 }
 
 .btn-leng:hover{
-	background-color: @color-sec;
-	color: #fff;
+	background-color: #fff;
+	color: @color-sec;
 }
 
 .navbar-nav>li>a {
@@ -43,9 +48,12 @@
     transition: all 0.2s ease-in-out;
 }
 
-.navbar-nav>li>a:hover {
-    background-color: @color-sec;
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: @color-sec;
 }
+
 
 .navbar-toggle {
     margin-top: 20px;
@@ -58,11 +66,29 @@
     background-color: #fff;
 }
 
+a:visited{
+	background-color: transparent;
+}
+
 /* IMG PRINCIPAL*/
+
+.bg-principal{
+	background-color: @color-base;
+}
 
 .img-principal{
 	background-image: url("../img/header-bg.svg");
 	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 600px;
+	background-size: 90%;
+	background-position: 50% 148%;
+	height: 510px;
+}
+
+.title{
+	font-size: 1.5em;
+	margin-top: 130px;
+	padding: 0 250px;
+	color: @color-white;
+	font-weight: lighter;
+	letter-spacing: 1px;
 }
