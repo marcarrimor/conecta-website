@@ -15,8 +15,8 @@ body{
 }
 
 .navbar-principal {
-    background-color: @color-base;
-    border-color: @color-base;
+    background-color: @color-degraded-1;
+    border-color: @color-degraded-1;
 }
 
 .navbar-brand {
@@ -72,8 +72,12 @@ a:visited{
 
 /* IMG PRINCIPAL*/
 
-.bg-principal{
-	background-color: @color-base;
+.bg-degraded{
+    background: @color-degraded-1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@color-degraded-1, @color-degraded-2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@color-degraded-1, @color-degraded-2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@color-degraded-1, @color-degraded-2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(@color-degraded-1, @color-degraded-2); /* Standard syntax (must be last) */
 }
 
 .img-principal{
