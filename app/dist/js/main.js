@@ -1,5 +1,5 @@
 $(document).on('ready', function() {
-      $("#regular").slick({
+      $(".regular").slick({
         dots: true,
         infinite: true,
         slidesToShow: 3,
