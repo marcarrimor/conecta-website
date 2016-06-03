@@ -13,12 +13,14 @@
 
 
         angular.element(document).ready(function () {
-             $(".regular").slick({
-                dots: true,
+             $(".autoplay").slick({
+                dots: false,
                 infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3
-          });
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+              });
         });
  
   };
