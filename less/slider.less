@@ -25,7 +25,7 @@ section#slider-cont .tracking .monitor {
 	height: 346px;
 	background: #fff;
 	margin-top: 5.9em;
-	padding: 38px 6px 0 6px;
+	padding: 38px 6px 5px 6px;
 	border: 2px solid #e0e5e9;
 	-khtml-border-radius: 26px 26px 0 0;
 	-moz-border-radius: 26px 26px 0 0;
@@ -89,10 +89,26 @@ section#slider-cont .tracking .monitor .monitor-screen img {
 
 }
 
-@media only screen and (max-width:550px) {
+@media only screen and (max-width:768px) {
 	section#slider-cont .tracking .monitor {
-		left: 50%;
-		margin-left: -103px
+		margin: auto;
 	}
+	.slider{
+		padding: 2em 0em;
+	}
+	section#slider-cont .tracking .monitor .monitor-camera {
+		top: 6%;
+		left: 50%;
+		
+	}
+	section#slider-cont .tracking .monitor .monitor-speaker {
+		top: 6%;
+		left: 50%;
+	}
+}
 
+@media (min-width: 768px) {
+	.slider{
+		padding: 10em 2em;
+	}
 }

@@ -2,6 +2,6 @@
 	'use strict';
 
 	angular
-	 .module('conecta', ['ngRoute']);
+	 .module('conecta', ['ngRoute']); 
 
 })();

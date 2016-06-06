@@ -1,5 +1,7 @@
+
 body{
 	color: @color-text;
+	font-family: 'Roboto';
 }
 
 .text-white{
@@ -28,7 +30,6 @@ body{
 
 .navbar-brand {
     height: 75px;
-    padding-left: 70px;
 }
 
 .navbar-nav{
@@ -37,7 +38,7 @@ body{
 }
 
 .btn-leng{
-	margin: 6px 50px 6px 10px;
+	margin: 6px 0px 6px 10px;
 	background-color: transparent;
 	border: 1px solid #fff;
 	color: #fff;
@@ -64,9 +65,9 @@ body{
 
 .navbar-toggle {
     margin-top: 20px;
-    margin-right: 100px;
     border: 1px solid #fff;
     color: #fff;
+    margin-right: 50px;
 }
 
 .icon-bar {
@@ -90,8 +91,8 @@ a:visited{
 .img-principal{
 	background-image: url("../img/header-bg.svg");
 	background-repeat: no-repeat;
-	background-size: 90%;
-	background-position: 50% 148%;
+	background-size: 100%;
+	background-position: 50% 166%;
 	height: 510px;
 }
 
@@ -106,4 +107,44 @@ a:visited{
 
 /*RESPONSIVE*/
 
+@media (max-width: 991px) {
+	.title-principal{
+		margin-top: 4em;
+		padding: 0 3em;
+	}
+	.img-principal{
+	background-image: url("../img/header-bg.svg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 50% 110%;
+	height: 400px;
+	}
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -30px;
+	}
+	.btn-leng {
+    margin-right: -20px;
+	}
+	.nav>li>a {
+    padding: 10px 10px;
+}
+}
+
+@media (max-width: 768px) {
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 40px;
+	}
+	.btn-leng {
+    margin-right: 40px;
+	}
+}
+
+
+
+// @media (min-width: 992px) {
+ 
+// }
+// @media (min-width: 1200px) {
+  
+// }
 

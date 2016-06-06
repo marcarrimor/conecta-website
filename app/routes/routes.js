@@ -12,6 +12,10 @@
 				controller: 'homeController',
         		controllerAs: 'home',
         		templateUrl: 'app/views/home/home.html'
+			}).when('/nosotros',{
+				controller: 'aboutController',
+        		controllerAs: 'about',
+        		templateUrl: 'app/views/about/about.html'
 			}).otherwise({
 	         	redirectTo: '/'
 	      	});
