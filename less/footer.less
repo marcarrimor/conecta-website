@@ -1,3 +1,45 @@
 footer{
-	padding: 2em 0 1em;
+	padding: 4em 0 1em;
+	.links{
+		color: @color-text;
+		display: block;
+	}
+	p{
+		margin-bottom: 0;
+	}
+	.logo-conecta{
+		width: 180px;
+	}
+	.text-footer{
+		padding: 1em 3em 1em 0;
+	}
+	.social-links{
+		padding: 2em 0 2em;
+		
+		img{
+			padding-left: 1em;
+		}
+
+		a{
+			img{
+			padding-left: 1em;
+			transition: all 0.2s ease-in-out;
+			}
+			img:hover{
+			-webkit-transform: scale(1.3);
+		    -moz-transform: scale(1.3);
+		    -ms-transform: scale(1.3);
+		    -o-transform: scale(1.3);
+		    transform: scale(1.3)
+			}			
+		}
+	}
+}
+
+.bg-footer{
+	background-image: url("../img/bg-footer.svg");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: -40% 100px;
+	height: auto;
 }

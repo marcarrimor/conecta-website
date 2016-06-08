@@ -1,150 +1,37 @@
 
-body{
-	color: @color-text;
-	font-family: 'Roboto';
-}
-
-.text-white{
-	color: @color-white;
-}
-
-.pd-0{
-	padding: 0;
-}
-
-
-/* MENU */
-
-.navbar{
-	min-height: 75px;
-}
-
-.navbar-brand img{
-	width: 200px;
-}
-
-.navbar-principal {
-    background-color: @color-degraded-1;
-    border-color: @color-degraded-1;
-}
-
-.navbar-brand {
-    height: 75px;
-}
-
-.navbar-nav{
-	margin: 12px;
-	padding-top: 5px;
-}
-
-.btn-leng{
-	margin: 6px 0px 6px 10px;
-	background-color: transparent;
-	border: 1px solid #fff;
-	color: #fff;
-	transition: all 0.2s ease-in-out;
-}
-
-.btn-leng:hover{
-	background-color: #fff;
-	color: @color-sec;
-}
-
-.navbar-nav>li>a {
-    color: #fff;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
-}
-
-
-.nav > li > a:hover,
-.nav > li > a:focus {
-  background-color: @color-sec;
-}
-
-
-.navbar-toggle {
-    margin-top: 20px;
-    border: 1px solid #fff;
-    color: #fff;
-    margin-right: 50px;
-}
-
-.icon-bar {
-    background-color: #fff;
-}
-
-a:visited{
-	background-color: transparent;
-}
 
 /* IMG PRINCIPAL*/
 
-.bg-degraded{
-    background: @color-degraded-1; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(@color-degraded-1, @color-degraded-2); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(@color-degraded-1, @color-degraded-2); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(@color-degraded-1, @color-degraded-2); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(@color-degraded-1, @color-degraded-2); /* Standard syntax (must be last) */
-}
+// .bg-degraded{
+//     background: @color-degraded-1; /* For browsers that do not support gradients */
+//     background: -webkit-linear-gradient(@color-degraded-1, @color-degraded-2); /* For Safari 5.1 to 6.0 */
+//     background: -o-linear-gradient(@color-degraded-1, @color-degraded-2); /* For Opera 11.1 to 12.0 */
+//     background: -moz-linear-gradient(@color-degraded-1, @color-degraded-2); /* For Firefox 3.6 to 15 */
+//     background: linear-gradient(@color-degraded-1, @color-degraded-2); /* Standard syntax (must be last) */
+// }
 
 .img-principal{
-	background-image: url("../img/header-bg.svg");
+	background-image: url("../img/bg1.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-position: 50% 166%;
-	height: 510px;
+	background-position: 50% 67px;
+	height: 540px;
 }
 
 .title-principal{
 	font-size: 1.5em;
 	margin-top: 130px;
-	padding: 0 250px;
-	color: @color-white;
-	font-weight: lighter;
+	font-weight: 300;
 	letter-spacing: 1px;
+	line-height: 22pt;
 }
 
 /*RESPONSIVE*/
 
 @media (max-width: 991px) {
-	.title-principal{
-		margin-top: 4em;
-		padding: 0 3em;
-	}
 	.img-principal{
-	background-image: url("../img/header-bg.svg");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: 50% 110%;
-	height: 400px;
-	}
-	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: -30px;
-	}
-	.btn-leng {
-    margin-right: -20px;
-	}
-	.nav>li>a {
-    padding: 10px 10px;
-}
-}
-
-@media (max-width: 768px) {
-	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: 40px;
-	}
-	.btn-leng {
-    margin-right: 40px;
+	background-position: 50% 50%;
 	}
 }
 
-
-
-// @media (min-width: 992px) {
- 
-// }
-// @media (min-width: 1200px) {
-  
-// }
 
