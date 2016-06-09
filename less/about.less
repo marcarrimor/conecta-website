@@ -18,16 +18,31 @@
 
 .img-about{
 	background: url('../img/map.svg') center no-repeat;
-	background-size: 150%;
-	height: 502px;
+	background-size: 180%;
+	height: 530px;
 	margin-top: 3em;
 }
 
 .icons-about{
-	margin-top: 6em;
+	margin-top: 8em;
 	font-family: 'Roboto';
 	list-style-type: circle;
+
+	i{
+		padding-right: 1em;
+		color: @color-base;
+	}
+	p{
+		font-size: 1.7em;
+		white-space: pre;
+	}
+
 }
 
 /* RESPONSIVE */
 
+@media (max-width: 768px) {
+	.icons-about{
+		margin-top: 0em;
+	}
+}

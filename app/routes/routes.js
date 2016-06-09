@@ -16,6 +16,10 @@
 				controller: 'aboutController',
         		controllerAs: 'about',
         		templateUrl: 'app/views/about/about.html'
+			}).when('/contacto',{
+				controller: 'contactController',
+        		controllerAs: 'contact',
+        		templateUrl: 'app/views/contact/contact.html'
 			}).otherwise({
 	         	redirectTo: '/'
 	      	});
