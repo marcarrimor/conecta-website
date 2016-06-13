@@ -16,6 +16,14 @@
 				controller: 'aboutController',
         		controllerAs: 'about',
         		templateUrl: 'app/views/about/about.html'
+			}).when('/clientes',{
+				controller: 'clientsController',
+        		controllerAs: 'clients',
+        		templateUrl: 'app/views/clients/clients.html'
+			}).when('/partners',{
+				controller: 'partnersController',
+        		controllerAs: 'partners',
+        		templateUrl: 'app/views/partners/partners.html'
 			}).when('/contacto',{
 				controller: 'contactController',
         		controllerAs: 'contact',
