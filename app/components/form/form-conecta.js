@@ -1,4 +1,32 @@
 /*IIFE*/
+function sendMail(){
+  $.ajax({
+    url: 'http://beta.conecta.co:3800/send/sendMail',
+    data: {
+        nombre: $("#name").val(),
+        email: $("#name").val(),
+        telefono: $("#phone").val(),
+        message: $("#message").val()
+    },
+    type: 'POST',
+    datatype: JSON,
+    success: function(respuesta){
+      console.log(respuesta);
+
+    },
+    error: function(respuesta){
+      return false
+    }
+  });
+  return true;
+}
+
+$("#submit-contact").click(function(){
+  sendMail();
+});
+
+
+
 (function(){
     'use strict'
     
@@ -12,23 +40,7 @@
   };
 
 
-    function sendMail(){
-      $ajax({
-        url: 'localhost:3000/send/',
-        data: {
-          
-        },
-        type: 'POST',
-        datatype: JSON,
-        success: 
-        error:
 
-        function(){
-          return: false
-        }
-      }),
-      return true;
-    }
 
     angular
       .module('conecta')

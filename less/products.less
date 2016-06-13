@@ -1,0 +1,68 @@
+.icons-products{
+	margin-top: 0em;
+	font-family: 'Roboto';
+	list-style-type: circle;
+
+	i{
+		padding-right: 1em;
+		color: @color-base;
+		font-size: 1.3em;
+	}
+	.text-products{
+		font-size: 1.2em;
+		white-space: pre;
+	}
+	.text-sec-products{
+		font-size: 1.4em;
+		color: @color-base;
+		white-space: pre;
+		padding-bottom: 2em;
+	}
+
+}
+
+.img-products{
+		background-image: url("../img/screen-1.svg");
+		background-repeat: no-repeat;
+		background-size: 65%;
+        background-position: 53em 4.5em;
+    	height: 850px;
+	}
+
+
+@media (max-width: 1200px) {
+	.img-products{
+		background-size: 75%;
+		background-position: 45em 4.5em;
+		height: 700px;
+	}
+}
+
+@media (max-width: 992px) {
+	.img-products{
+		background-size: 85%;
+		background-position: 30em 4.5em;
+		height: 700px;
+	}
+}
+
+@media (max-width: 768px) {
+	.img-products{
+		background-size: cover;
+		background-position: 20em 4.5em;
+	}
+}
+
+@media (max-width: 599px) {
+	.img-products{
+		background-size: cover;
+		background-position: 10em 4.5em;
+	}
+}
+
+@media (max-width: 480px) {
+	.img-products{
+		background-size: cover;
+		background-position: 0em 4.5em;
+	}
+}

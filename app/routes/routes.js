@@ -16,6 +16,10 @@
 				controller: 'aboutController',
         		controllerAs: 'about',
         		templateUrl: 'app/views/about/about.html'
+			}).when('/productos',{
+				controller: 'productsController',
+        		controllerAs: 'products',
+        		templateUrl: 'app/views/products/products.html'
 			}).when('/clientes',{
 				controller: 'clientsController',
         		controllerAs: 'clients',
