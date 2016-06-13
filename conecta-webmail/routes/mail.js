@@ -37,9 +37,12 @@ request.request(emailData).then(function(result){
 	console.log(reason);
 	data = {
 			success: false,
-			mensaje: "Ocurrió un error al enviar el correo."
+			mensaje: "Ocurrió un error al enviar el correo.",
+			reason: reason
 		}
+	res.jsonp(data);
 });
+
 	// .request('success', function (response, body) {
 	// 	console.log (response.statusCode, body);
 	// 	res.jsonp(data);
