@@ -2,9 +2,9 @@
 (function(){
     'use strict'
     
-    var products = {
+    var sliderProducts = {
         controller: productsCtrl,
-        templateUrl: 'app/components/slider-products/slider-products.html' 
+        templateUrl: 'app/components/products/slider-products.html' 
     };
 
     function productsCtrl(){
@@ -14,5 +14,5 @@
 
     angular
       .module('conecta')
-      .component('products', products); 
+      .component('sliderProducts', sliderProducts); 
 })();
