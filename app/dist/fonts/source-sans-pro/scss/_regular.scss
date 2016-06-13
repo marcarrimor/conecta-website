@@ -1,0 +1,13 @@
+@font-face {
+  font: {
+    family: "Source Sans Pro";
+    weight: 400;
+    style: normal;
+  }
+
+  src: url("#{$source-sans-pro-path}/source-sans-pro-regular.eot");
+  src: url("#{$source-sans-pro-path}/source-sans-pro-regular.eot#iefix") format("embedded-opentype"),
+       url("#{$source-sans-pro-path}/source-sans-pro-regular.woff2") format("woff2"),
+       url("#{$source-sans-pro-path}/source-sans-pro-regular.woff") format("woff"),
+       url("#{$source-sans-pro-path}/source-sans-pro-regular.ttf") format("truetype");
+}

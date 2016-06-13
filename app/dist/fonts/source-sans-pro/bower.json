@@ -1,0 +1,27 @@
+{
+  "name": "source-sans-pro",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/divspace/source-sans-pro",
+  "description": "Bower package for the Source Sans Pro web font",
+  "authors": [
+    "Kyle Anderson <kyle@divspace.com>"
+  ],
+  "keywords": [
+    "font",
+    "fonts",
+    "sans-serif",
+    "source",
+    "sans",
+    "pro",
+    "source-sans-pro"
+  ],
+  "main": [
+    "scss/source-sans-pro.scss",
+    "css/source-sans-pro.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ]
+}

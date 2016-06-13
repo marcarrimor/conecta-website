@@ -8,6 +8,7 @@
     "slick-carousel": "^1.6.0",
     "angular-slick": "^0.2.1",
     "SuperScrollorama": "^1.0.3",
-    "roboto-fontface": "^0.4.5"
+    "roboto-fontface": "^0.4.5",
+    "jquery": "^3.0.0"
   }
 }

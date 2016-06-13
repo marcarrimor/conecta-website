@@ -1,0 +1,13 @@
+@font-face {
+  font: {
+    family: "Source Sans Pro";
+    weight: 600;
+    style: italic;
+  }
+
+  src: url("#{$source-sans-pro-path}/source-sans-pro-semi-bold-italic.eot");
+  src: url("#{$source-sans-pro-path}/source-sans-pro-semi-bold-italic.eot#iefix") format("embedded-opentype"),
+       url("#{$source-sans-pro-path}/source-sans-pro-semi-bold-italic.woff2") format("woff2"),
+       url("#{$source-sans-pro-path}/source-sans-pro-semi-bold-italic.woff") format("woff"),
+       url("#{$source-sans-pro-path}/source-sans-pro-semi-bold-italic.ttf") format("truetype");
+}
