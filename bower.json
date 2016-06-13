@@ -9,6 +9,7 @@
     "angular-slick": "^0.2.1",
     "SuperScrollorama": "^1.0.3",
     "roboto-fontface": "^0.4.5",
-    "jquery": "^3.0.0"
+    "jquery": "^3.0.0",
+    "scrollmagic": "^2.0.5"
   }
 }
