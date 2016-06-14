@@ -28,6 +28,7 @@
     "grunt-shell": "^1.3.0"
   },
   "dependencies": {
+    "mailjet-sendemail": "^1.1.4",
     "source-sans-pro": "^2.0.10"
   }
 }
