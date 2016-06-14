@@ -1,7 +1,7 @@
 /*IIFE*/
 function sendMail(){
   $.ajax({
-    url: 'http://beta.conecta.co:3800/send/sendMail',
+    url: 'http://mailer.conecta.co/mail/sendMail',
     data: {
         nombre: $("#name").val(),
         email: $("#name").val(),
@@ -22,6 +22,7 @@ function sendMail(){
 }
 
 $("#submit-contact").click(function(){
+        alert("hola");
   sendMail();
 });
 
@@ -29,10 +30,10 @@ $("#submit-contact").click(function(){
 
 (function(){
     'use strict'
-    
+
     var formConecta = {
         controller: formConectaCtrl,
-        templateUrl: 'app/components/form/form-conecta.html' 
+        templateUrl: 'app/components/form/form-conecta.html'
     };
 
     function formConectaCtrl(){
@@ -44,5 +45,5 @@ $("#submit-contact").click(function(){
 
     angular
       .module('conecta')
-      .component('formConecta', formConecta); 
+      .component('formConecta', formConecta);
 })();
