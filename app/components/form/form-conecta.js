@@ -10,6 +10,7 @@ function sendMail(){
     },
     type: 'POST',
     datatype: JSON,
+    crossDomain: true,
     success: function(respuesta){
       console.log(respuesta);
 
