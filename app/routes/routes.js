@@ -32,7 +32,7 @@
 				controller: 'contactController',
         		controllerAs: 'contact',
         		templateUrl: 'app/views/contact/contact.html'
-			}).when('/contacto/datos',{
+			}).when('/datos',{
 				controller: 'datosController',
         		controllerAs: 'datos',
         		templateUrl: 'app/views/contact/datos/datos.html'
