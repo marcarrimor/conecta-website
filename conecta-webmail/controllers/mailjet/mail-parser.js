@@ -1,6 +1,5 @@
 
 exports.parse_recipient_type = function(recipient_list){
-        console.log("****************HOLA");
         console.log(recipient_list);
   var return_vals = {
     'to': [],
