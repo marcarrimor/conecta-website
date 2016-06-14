@@ -5,9 +5,9 @@
 		.module('conecta')
 		.config(configuration);
 
-		configuration.$inject = ['$routeProvider'];
+		configuration.$inject = ['$routeProvider', '$locationProvider'];
 
-		function configuration($routeProvider){
+		function configuration($routeProvider, $locationProvider){
 			$routeProvider.when('/',{
 				controller: 'homeController',
         		controllerAs: 'home',
@@ -35,6 +35,11 @@
 			}).otherwise({
 	         	redirectTo: '/'
 	      	});
+
+	      	$locationProvider.html5Mode({
+                 enabled: true,
+                 requireBase: false
+          	});
 		}
 
 })();
