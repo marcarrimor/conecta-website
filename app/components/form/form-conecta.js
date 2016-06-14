@@ -10,17 +10,24 @@ function sendMail(){
     },
     type: 'POST',
     datatype: JSON,
-    crossDomain: true,
+    crossDomain: false,
     success: function(respuesta){
       console.log(respuesta);
 
     },
     error: function(respuesta){
-      return false
+
     }
   });
-  return true;
 }
+
+$( "form" ).submit(function( event ) {
+
+  console.log("send");
+  event.preventDefault();
+});
+
+
 
 $("#submit-contact").click(function(){
         alert("hola");

@@ -1,11 +1,11 @@
-<form role="form">
+<form role="form" method="POST" action="http://mailer.conecta.co/mail/sendMail">
   <div class="form-group">
     <label for="name">Nombre</label>
-    <input name="name" type="text" class="form-control" id="name">
+    <input name="nombre" type="text" class="form-control" id="nombre">
   </div>
   <div class="form-group">
     <label for="email">Email</label>
-    <input name="email" type="email" class="form-control" id="email">
+    <input name="correo" type="email" class="form-control" id="correo">
   </div>
   <div class="form-group">
     <label for="phone">Teléfono</label>
@@ -16,5 +16,6 @@
     <textarea name="message" type="text" class="form-control" rows="5" id="message"></textarea>
   </div>
   <div class="g-recaptcha" data-sitekey="6LfRmiITAAAAAC15kysQyac2R61JQLAtSgvDl8os"></div>
-  <a id="submit-contact" class="btn btn-100 btn-form">Enviar</a>
+  <!-- <a id="submit-contact" class="btn btn-100 btn-form">Enviar</a> -->
+  <input  class="btn btn-100 btn-form" type="submit" name="name" value="Enviar">
 </form>
