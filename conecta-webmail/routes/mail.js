@@ -21,17 +21,17 @@ router.post('/sendMail', function(req, res){
 
 
 if(mailjet.sendContent('contacto@conecta.co',
-         [req.body.correo, 'bcc:contacto@conecta.co'],
+         [req.body.correo, 'bcc:octavio.martinez@conecta.co'],
          'Contacto Conecta Soluciones Tecnológicas',
          'html',
          html)){
-                 res.jsonp(data);
+                 return res.redirect("http://conecta.co/contacto/datos");
          }else{
                  	data = {
                  			success: false,
                  			mensaje: "Ocurrió un error al enviar el correo."
                  		}
-                 	res.jsonp(data);
+                 	return res.redirect("http://conecta.co/contacto/datos");
          }
 
 
