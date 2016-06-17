@@ -13,20 +13,17 @@
         angular.element(document).ready(function () {
                 var controller = new ScrollMagic.Controller();
 
+               
+                var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1000})
+                    // trigger animation by adding a css class
+                    .setClassToggle("#animate1", "zap")
+                    .addTo(controller);
 
-
-                // build scene
-                // var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1000})
-                //     // trigger animation by adding a css class
-                //     .setClassToggle("#animate1", "zap")
-                //     .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
-                //     .addTo(controller);
-
-                // var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
-                //     // trigger a velocity opaticy animation
-                //     .setVelocity("#animate", {opacity: 0}, {duration: 400})
-                //     .addIndicators() // add indicators (requires plugin)
-                //     .addTo(controller);
+                var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
+                    // trigger a velocity opaticy animation
+                    .setVelocity("#animate", {opacity: 0}, {duration: 400})
+                    .addIndicators() // add indicators (requires plugin)
+                    .addTo(controller);
 
 
                 // new ScrollMagic.Scene({
@@ -35,6 +32,9 @@
                 //     })
                 //     .setPin("#my-sticky-element") // pins the element for the the scene's duration
                 //     .addTo(controller); // assign the scene to the controller
+
+
+
 
 
 
