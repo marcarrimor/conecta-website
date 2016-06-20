@@ -11,19 +11,92 @@
         var asController = this;
 
         angular.element(document).ready(function () {
-                var controller = new ScrollMagic.Controller();
 
-               
-                var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1000})
-                    // trigger animation by adding a css class
-                    .setClassToggle("#animate1", "zap")
-                    .addTo(controller);
+            // Init ScrollMagic Controller
+            var controller = new ScrollMagic.Controller();
 
-                var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
-                    // trigger a velocity opaticy animation
-                    .setVelocity("#animate", {opacity: 0}, {duration: 400})
-                    .addIndicators() // add indicators (requires plugin)
-                    .addTo(controller);
+    // Scene        
+              
+            // Create Animation for 0.5s
+            var tween = TweenMax.staggerFromTo('.fade-it', 0.5,
+                {
+                    autoAlpha:0
+                },
+                {
+                    autoAlpha:1, 
+                    delay:1
+                },
+                0.5
+                );
+
+            // Create the Scene and trigger when visible
+            var scene = new ScrollMagic.Scene({
+                triggerElement: '#scene',
+                duration: 500 /* How many pixels to scroll / animate */
+                })
+                .setTween(tween)
+                .addTo(controller);
+              
+            // Add debug indicators fixed on right side
+                scene.addIndicators();
+
+    // Scene 2
+
+            var tween2 = TweenMax.from( $('.fly-it'), .5, 
+                {
+                    css:{
+                        right:'-600px',
+                        opacity: 0
+                    }, 
+                    ease:Quad.easeInOut
+                });
+  
+            var scene2 = new ScrollMagic.Scene({
+                triggerElement: '#scene2',
+                duration: 250 /* How many pixels to scroll / animate */
+                })
+                .setTween(tween2)
+                .addTo(controller);     
+
+
+    // Scene 3
+
+            var tween3 = TweenMax.from( $('.fade-in'), .5, 
+                {
+                    css:{
+                        opacity: 0
+                    }
+                }); 
+
+            var scene3 = new ScrollMagic.Scene({
+                triggerElement: '#scene3',
+                duration: 100 /* How many pixels to scroll / animate */
+                })
+                .setTween(tween3)
+                .addTo(controller); 
+
+
+
+
+
+
+
+            // var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1000})
+            //     // trigger animation by adding a css class
+            //     .setClassToggle("#animate1", "zap")
+            //     .addTo(controller);
+
+                // var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
+                //     // trigger a velocity opaticy animation
+                //     .setVelocity("#animate", {opacity: 0}, {duration: 400})
+                //     .addIndicators() // add indicators (requires plugin)
+                //     .addTo(controller);
+
+
+
+
+
+
 
 
                 // new ScrollMagic.Scene({
