@@ -10,6 +10,8 @@
     "SuperScrollorama": "^1.0.3",
     "roboto-fontface": "^0.4.5",
     "jquery": "^3.0.0",
-    "scrollmagic": "^2.0.5"
+    "scrollmagic": "^2.0.5",
+    "wow": "wowjs#^1.1.2",
+    "animate.css": "^3.5.2"
   }
 }
