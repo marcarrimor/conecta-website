@@ -37,7 +37,7 @@
                 .addTo(controller);
               
             // Add debug indicators fixed on right side
-                scene.addIndicators();
+                // scene.addIndicators();
 
     // Scene 2
             var tween2 = TweenMax.from( $('.fly-it'), .5, 
@@ -75,7 +75,6 @@
             var tween3 = TweenMax.from('.fade-it2', 0.5,
                 {
                     css:{
-                        left:'-100px',
                         opacity: 0
                     }, 
                     ease:Quad.easeInOut
@@ -88,10 +87,9 @@
                 .addTo(controller); 
 
     // Scene 4
-            var tween4 = TweenMax.staggerFromTo('.fade-it3', 0.5,
+            var tween4 = TweenMax.from('.fade-it3', 0.5,
                 {
                     css:{
-                        left:'-100px',
                         opacity: 0
                     }, 
                     ease:Quad.easeInOut
@@ -106,18 +104,13 @@
                 .addTo(controller);
 
     // Scene 5
-            var tween5 = TweenMax.staggerFromTo('.fade-it4', 0.5,
+            var tween5 = TweenMax.from('.fade-it4', 0.5,
                 {
-                    autoAlpha:0,
-                    ease:Power0.easeInOut
-                },
-                {
-                    autoAlpha:1, 
-                    delay:1,
-                    ease:Power0.easeInOut
-                },
-                0.5
-                );
+                    css:{
+                        opacity: 0
+                    }, 
+                    ease:Quad.easeInOut
+                }); 
 
             var scene5 = new ScrollMagic.Scene({
                 triggerElement: '#scene5',
@@ -130,7 +123,6 @@
             var tween6 = TweenMax.from( $('.fly-it2'), .5, 
                 {
                     css:{
-                        left:'-100px',
                         opacity: 0
                     }, 
                     ease:Quad.easeInOut
@@ -138,12 +130,26 @@
   
             var scene6 = new ScrollMagic.Scene({
                 triggerElement: '#scene6',
-                duration: 250 /* How many pixels to scroll / animate */
+                duration: 100 /* How many pixels to scroll / animate */
                 })
                 .setTween(tween6)
                 .addTo(controller); 
 
-
+    // Scene 7
+            var tween7 = TweenMax.from( $('.fly-it3'), .5, 
+                {
+                    css:{
+                        opacity: 0
+                    }, 
+                    ease:Quad.easeInOut
+                });
+  
+            var scene7 = new ScrollMagic.Scene({
+                triggerElement: '#scene7',
+                duration: 100 /* How many pixels to scroll / animate */
+                })
+                .setTween(tween7)
+                .addTo(controller); 
 
 
 
