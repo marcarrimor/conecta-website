@@ -12,7 +12,11 @@
 
         angular.element(document).ready(function () {
 
-            // Init ScrollMagic Controller
+
+            if (!is_touch_device()) {
+                // Start ScrollMagic code
+    
+    // Init ScrollMagic Controller
             var controller = new ScrollMagic.Controller();
 
     // Scene        
@@ -150,6 +154,14 @@
                 })
                 .setTween(tween7)
                 .addTo(controller); 
+            }
+
+            function is_touch_device() { //deactivate animations in touch screens
+              return 'ontouchstart' in window // works on most browsers 
+                  || 'onmsgesturechange' in window; // works on ie10
+            };
+
+    
 
 
 
