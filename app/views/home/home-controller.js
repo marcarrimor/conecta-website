@@ -85,75 +85,27 @@
                 });
             var scene3 = new ScrollMagic.Scene({
                 triggerElement: '#scene3',
-                duration: 100 /* How many pixels to scroll / animate */
+                offset: 50 /* How many pixels to scroll / animate */
                 })
                 .setTween(tween3)
                 .addTo(controller); 
+                // scene3.addIndicators();
 
     // Scene 4
-            var tween4 = TweenMax.from('.fade-it3', 0.5,
+            var tween4 = TweenMax.from( $('.fade-it3'), 0.5, 
                 {
                     css:{
                         opacity: 0
                     }, 
                     ease:Quad.easeInOut
-                }); 
-                
-
+                });
+  
             var scene4 = new ScrollMagic.Scene({
                 triggerElement: '#scene4',
-                duration: 100 /* How many pixels to scroll / animate */
+                offset: 50 /* offset the trigger 150px below #scene's top */
                 })
                 .setTween(tween4)
-                .addTo(controller);
-
-    // Scene 5
-            var tween5 = TweenMax.from('.fade-it4', 0.5,
-                {
-                    css:{
-                        opacity: 0
-                    }, 
-                    ease:Quad.easeInOut
-                }); 
-
-            var scene5 = new ScrollMagic.Scene({
-                triggerElement: '#scene5',
-                duration: 100 /* How many pixels to scroll / animate */
-                })
-                .setTween(tween5)
-                .addTo(controller);
-
-    // Scene 6
-            var tween6 = TweenMax.from( $('.fly-it2'), .5, 
-                {
-                    css:{
-                        opacity: 0
-                    }, 
-                    ease:Quad.easeInOut
-                });
-  
-            var scene6 = new ScrollMagic.Scene({
-                triggerElement: '#scene6',
-                duration: 100 /* How many pixels to scroll / animate */
-                })
-                .setTween(tween6)
-                .addTo(controller); 
-
-    // Scene 7
-            var tween7 = TweenMax.from( $('.fly-it3'), .5, 
-                {
-                    css:{
-                        opacity: 0
-                    }, 
-                    ease:Quad.easeInOut
-                });
-  
-            var scene7 = new ScrollMagic.Scene({
-                triggerElement: '#scene7',
-                duration: 100 /* How many pixels to scroll / animate */
-                })
-                .setTween(tween7)
-                .addTo(controller); 
+                .addTo(controller);  
             }
 
             function is_touch_device() { //deactivate animations in touch screens
