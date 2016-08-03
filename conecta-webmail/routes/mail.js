@@ -28,13 +28,13 @@ if(mailjet.sendContent('contacto@conecta.co',
          'Contacto Conecta Soluciones Tecnológicas',
          'html',
          html)){
-                 return res.redirect("http://conecta.co/datos");
+                 return res.redirect("http://conecta.mx/datos");
          }else{
                  	data = {
                  			success: false,
                  			mensaje: "Ocurrió un error al enviar el correo."
                  		}
-                 	return res.redirect("http://conecta.co/datos");
+                 	return res.redirect("http://conecta.mx/datos");
          }
 
 
